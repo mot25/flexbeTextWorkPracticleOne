@@ -1,7 +1,15 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
 
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -10,9 +18,15 @@ body {
 }
 
 .screen {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: absolute;
   top: 50px;
   left: 0;
@@ -29,14 +43,22 @@ body {
   -webkit-font-smoothing: antialiased;
   width: 360px;
   border-radius: 3px;
-  box-shadow: 0 2px 15px 0 rgba(57, 68, 71, 0.45);
+  -webkit-box-shadow: 0 2px 15px 0 rgba(57, 68, 71, 0.45);
+          box-shadow: 0 2px 15px 0 rgba(57, 68, 71, 0.45);
   background: rgb(255, 255, 255);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: absolute;
   top: 10px;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
   right: 0;
   bottom: 10px;
 }
@@ -44,11 +66,19 @@ body {
 .modal-title {
   padding: 20px 20px 19px;
   border-bottom: 1px solid #f1f1f1;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-align: center;
-  align-items: center;
-  user-select: none;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   font-size: 13px;
   line-height: 20px;
   min-height: 60px;
@@ -64,21 +94,30 @@ body {
   min-height: calc(100% - 79px - 65px);
   color: #343434;
   background: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   overflow: hidden;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .image-holder {
   height: 60vh;
   margin: auto 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .image-holder img {
   max-width: 100%;
   max-height: 100%;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .buttons-bar {
@@ -86,11 +125,19 @@ body {
 
   padding: 20px 20px 19px;
   border-bottom: 1px solid #f1f1f1;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-align: center;
-  align-items: center;
-  user-select: none;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   font-size: 13px;
   line-height: 20px;
   height: 60px;
@@ -109,17 +156,29 @@ body {
   line-height: 14px;
   color: #fff;
   background-color: #4773ff;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border: 1px solid rgba(48, 52, 59, 0.1);
   display: -ms-inline-flexbox;
+  display: -webkit-inline-box;
   display: inline-flex;
   cursor: pointer;
   border-radius: 3px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   vertical-align: middle;
-  align-items: center;
-  user-select: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   min-width: 34px;
   z-index: 1;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
