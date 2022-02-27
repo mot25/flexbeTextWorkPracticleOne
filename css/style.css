@@ -66,6 +66,7 @@ body {
   background: black;
   display: flex;
   justify-content: center;
+  overflow: hidden;
   align-items: center;
 }
 .image-holder {
